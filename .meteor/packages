@@ -8,7 +8,6 @@ meteor-platform
 insecure
 iron:router
 jquery
-twbs:bootstrap
 autopublish
 accounts-ui
 accounts-password

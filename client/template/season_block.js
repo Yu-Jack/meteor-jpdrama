@@ -40,13 +40,18 @@ Template.season_block.helpers({
 Template.season_block.events({
     'click a': function(event) {
         
-        $('#drama-modal').empty();
+        $('#modal').empty();
         // drama information 
-        Blaze.renderWithData(Template.bootstrap_modal, darmaData, document.getElementById('drama-modal'));
+        Blaze.renderWithData(Template.bootstrap_modal, darmaData, document.getElementById('modal'));
         // comment template information
         Blaze.renderWithData(Template.comment, {}, document.getElementsByClassName('drama-comment')[0]);
         // comment information 
         Blaze.renderWithData(Template.comment_single, commentData, document.getElementsByClassName('comment')[0]);
+
+        $('#modal').openModal({
+            ready: function(){$('body').css('overflow-y','hidden');},
+            complete: function(){$('body').css('overflow-y','');}
+        });
 
         function darmaData() {
             var object = {

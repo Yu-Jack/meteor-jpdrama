@@ -1,19 +1,14 @@
 /* comment layout*/
 .comment-body{
 	vertical-align: top;
-	width: 78%;
+	/*width: 78%;*/
 	word-wrap:break-word;
 	/*padding: 0px 5px;*/
 	display: inline-block;
 }
 
 .comment-image{
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 50px;
-	width: 50px;
-	display: inline-block;
+	padding: 0px !important;
 }
 .fa{
 	cursor: pointer;

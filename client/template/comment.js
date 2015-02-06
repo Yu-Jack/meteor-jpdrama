@@ -21,7 +21,7 @@ Template.comment.events({
 
         var text = $('.leave-comment').val().replace(/\r?\n/g, "<br />");
 
-        //  save comment to collection of comment
+        //  save comment to collection of comment Meteor.user().emails[0].address
         comment.insert({
             createdAt: new Date(),
             userId: Meteor.userId(),

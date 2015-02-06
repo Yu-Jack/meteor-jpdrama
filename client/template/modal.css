@@ -1,0 +1,20 @@
+.drama-introduction {
+    margin: 20px 0px;
+}
+.modal-backdrop {
+    position: fixed !important;
+}
+.modal{
+	max-height: 95% !important;
+	top:3% !important;
+}
+@media screen and ( max-width: 600px) {
+    .modal {
+        max-width: 95% !important;
+    }
+}
+@media screen and ( max-width: 992px) {
+    .modal {
+        width: 100% !important;
+    }
+}
