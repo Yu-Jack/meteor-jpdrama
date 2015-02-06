@@ -1,0 +1,49 @@
+<template name="season_block">
+    <div class="container-fluid">
+        <div class="row season-background">
+            <!-- These data come from season_detail.js -->
+            <div id="season-1" class="season-range col-md-3 col-sm-6 col-xs-12">
+                <h1>冬季</h1>
+                {{#each season_1}}
+                <ul class="seanson-list">
+                    <li>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal">{{ name }}</a>
+                    </li>
+                </ul>
+                {{/each}}
+            </div>
+            <div id="season-4" class="season-range col-md-3 col-sm-6 col-xs-12">
+                <h1>春季</h1>
+                {{#each season_4}}
+                <ul class="seanson-list">
+                    <li>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal">{{ name }}</a>
+                    </li>
+                </ul>
+                {{/each}}
+            </div>
+            <div id="season-7" class="season-range col-md-3 col-sm-6 col-xs-12">
+                <h1>夏季</h1>
+                {{#each season_7}}
+                <ul class="seanson-list">
+                    <li>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal">{{ name }}</a>
+                    </li>
+                </ul>
+                {{/each}}
+            </div>
+            <div id="season-10" class="season-range col-md-3 col-sm-6 col-xs-12">
+                <h1>秋季</h1>
+                {{#each season_10}}
+                <ul class="seanson-list">
+                    <li>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal">{{ name }}</a>
+                    </li>
+                </ul>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div id="drama-modal"></div>
+    <!-- {{> bootstrap_modal}} -->
+</template>

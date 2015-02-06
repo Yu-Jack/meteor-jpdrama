@@ -1,0 +1,32 @@
+.season-background >div:nth-child(1){
+	background-color: rgba(0, 0, 0, 0.07);
+}
+.season-background >div:nth-child(2){
+	background-color: rgba(52, 229, 52, 0.63);
+}
+.season-background >div:nth-child(3){
+	background-color: rgba(237, 39, 39, 0.63);
+}
+.season-background >div:nth-child(4){
+	background-color: rgba(253, 188, 69, 0.65);
+}
+.season-background >div{
+	border: 5px solid #FFF;
+	border-radius: 10px;
+}
+
+.seanson-list > li{
+	margin: 10px 0;
+}
+
+.seanson-list > li .fa{
+	width: 60px;
+}
+.seanson-list  a {
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+}
+.fa:before{
+	margin-right: 3px;
+}

@@ -1,0 +1,15 @@
+<template name="comment_single">
+    {{#each data}}
+    <li>
+        <div class="comment-image" style="background-image:url(http://f.blog.xuite.net/f/0/a/b/12449715/blog_36493/txt/249250103/0.jpg)"></div>
+        <div class="comment-body">
+            <span class="comment-body__information">{{ name }}</span>
+            <div class="comment-body__content">
+                {{{ content }}}
+            </div>
+            <div class="comment-body__star"><i class="fa fa-heart-o">{{ star }}</i>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</template>

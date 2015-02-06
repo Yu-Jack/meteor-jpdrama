@@ -1,0 +1,12 @@
+<template name="comment">
+    {{#if login }}
+        Leave a comment : <br>
+        <textarea class="form-control leave-comment" style="max-width:100%;resize: none;" rows="5"></textarea>
+        <div style="text-align:right;margin-top:5px;"><button class="btn btn-info btn-submit" type="button">送出</button></div>
+    {{else}}
+        <h3>「登入後再來留言」</h3>
+    {{/if }}
+    <ul class="comment">
+    <!-- data will be rendered from comment.js with comment_single.html template -->
+    </ul>
+</template>

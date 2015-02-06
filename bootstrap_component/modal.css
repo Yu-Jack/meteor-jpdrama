@@ -1,0 +1,6 @@
+.drama-introduction{ margin: 20px 0px;}
+.modal-backdrop{position:fixed !important;}
+.modal-header .close{
+	margin-top:-10px !important;
+	padding: 10px;
+}
