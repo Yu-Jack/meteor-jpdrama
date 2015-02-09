@@ -1,9 +1,10 @@
-<template name="bootstrap_modal">
-    <!-- <div class="modal row mb-0" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<template name="modal">
+    <div class="modal fade row" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-bottom:0px;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="btn right close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
                     <h5 class="modal-title" id="myModalLabel">{{ data.name }}</h5>
                 </div>
                 <div class="modal-body">
@@ -12,19 +13,23 @@
                     <div class="drama drama-introduction">{{ data.content }}</div>
                     <div class="drama drama-comment"></div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
-    </div> -->
-
-
-    <div class="modal-header">
-        <a href="#" class="waves-effect waves-green modal-action modal-close right" style="font-size:30px;margin-top:-12px;"><span aria-hidden="true">&times;</span></a>
-        <h5 class="modal-title" id="myModalLabel">{{ data.name }}</h5>
     </div>
-    <div class="modal-body">
-        <div class="drama drama-image"><img src="{{ data.images }}">
+
+    <!-- <div class="row" style="padding: 24px;">
+        <div class="modal-header">
+            <a href="#" class="waves-effect waves-green modal-action modal-close right" style="font-size:30px;margin-top:-12px;"><span aria-hidden="true">&times;</span></a>
+            <h5 class="modal-title my-drama-name" id="myModalLabel">{{ data.name }}</h5>
         </div>
-        <div class="drama drama-introduction">{{ data.content }}</div>
-        <div class="drama drama-comment"></div>
-    </div>
+        <div class="modal-body">
+            <div class="drama drama-image"><img src="{{ data.images }}">
+            </div>
+            <div class="drama drama-introduction">{{ data.content }}</div>
+            <div class="drama drama-comment"></div>
+        </div>
+    </div> -->
 </template>

@@ -39,19 +39,49 @@ Template.season_block.helpers({
 
 Template.season_block.events({
     'click a': function(event) {
-        
+        var originY = event.pageY - event.offsetY;
+        console.log(event);
         $('#modal').empty();
         // drama information 
-        Blaze.renderWithData(Template.bootstrap_modal, darmaData, document.getElementById('modal'));
+        Blaze.renderWithData(Template.modal, darmaData, document.getElementById('modal'));
         // comment template information
         Blaze.renderWithData(Template.comment, {}, document.getElementsByClassName('drama-comment')[0]);
         // comment information 
         Blaze.renderWithData(Template.comment_single, commentData, document.getElementsByClassName('comment')[0]);
 
-        $('#modal').openModal({
-            ready: function(){$('body').css('overflow-y','hidden');},
-            complete: function(){$('body').css('overflow-y','');}
-        });
+        // $('#modal').openModal({
+        //     ready: function(){
+        //         // $('#modal').css('top',event.pageY - 100 );
+        //     },
+        //     complete: function() {
+        //         $('body').scrollTop(originY);
+        //     }
+        // });
+        // var width;
+
+        // if($(window).width() > 992 ){
+        //     width = '60%';
+        // }else if ( 600 < $(window).width() &&  $(window).width() < 992  ){
+        //     width = '80%';
+        // }else if ( $(window).width() < 600 ){
+        //     width = '95%';
+        // }
+
+        // $.colorbox({
+        //     html:$('#modal').html(),
+        //     fixed:true,
+        //     width: width,
+        //     height: '95%',
+        //     maxWidth: '96%',
+        //     maxHeight: '96%',
+        //     onOpen: function(){
+        //         $('body').css('overflow', 'hidden');
+        //     },
+        //     onClosed: function(){
+        //         $('body').css('overflow', '');  
+        //     }
+        // });
+
 
         function darmaData() {
             var object = {

@@ -7,7 +7,7 @@
                 {{#each season_1}}
                 <ul class="seanson-list">
                     <li>
-                        <i class="fa fa-heart">{{ star }}</i><a class="modal-trigger" href="#modal">{{ name }}</a>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal" >{{ name }}</a>
                     </li>
                 </ul>
                 {{/each}}
@@ -17,7 +17,7 @@
                 {{#each season_4}}
                 <ul class="seanson-list">
                     <li>
-                        <i class="fa fa-heart">{{ star }}</i><a class="modal-trigger" href="#modal">{{ name }}</a>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal" >{{ name }}</a>
                     </li>
                 </ul>
                 {{/each}}
@@ -27,7 +27,7 @@
                 {{#each season_7}}
                 <ul class="seanson-list">
                     <li>
-                        <i class="fa fa-heart">{{ star }}</i><a class="modal-trigger" href="#modal">{{ name }}</a>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal" >{{ name }}</a>
                     </li>
                 </ul>
                 {{/each}}
@@ -37,13 +37,14 @@
                 {{#each season_10}}
                 <ul class="seanson-list">
                     <li>
-                        <i class="fa fa-heart">{{ star }}</i><a class="modal-trigger" href="#modal">{{ name }}</a>
+                        <i class="fa fa-heart">{{ star }}</i><a data-toggle="modal" data-target="#myModal" >{{ name }}</a>
                     </li>
                 </ul>
                 {{/each}}
             </div>
         </div>
     </div>
-    <div id="modal" class="modal row"></div>
-    <!-- {{> bootstrap_modal}} -->
+    <div id="modal">
+    </div>
+    <!-- {{> modal}} -->
 </template>

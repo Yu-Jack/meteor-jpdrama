@@ -5,10 +5,11 @@
     position: fixed !important;
 }
 .modal{
-	max-height: 95% !important;
-	top:3% !important;
+	/*max-height: 95% !important;*/
+	/*top:3% !important;*/
+    /*margin-bottom: 15px !important;*/
 }
-@media screen and ( max-width: 600px) {
+/*@media screen and ( max-width: 600px) {
     .modal {
         max-width: 95% !important;
     }
@@ -17,4 +18,4 @@
     .modal {
         width: 100% !important;
     }
-}
+}*/
